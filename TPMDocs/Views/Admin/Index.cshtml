@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Admin";
+}
+
+<div id="users">
+
+</div>
+
+
+    @*<table id="users" class="table table-bordered">
+        <tr><td>Id</td><td>Имя</td><td>Возраст</td>
+        <tr>
+    </table>
+<script type="text/javascript">
+
+    $(function(){
+    $.getJSON('@Url.Action("JsonSearch", "Admin")', function(data) {
+            for(var i=0;i<data.length;i++){
+                $('#users').append('<tr><td>' + data[i].Код + '</td><td>' + data[i].КодЭконОсн + 
+                '</td><td>' + data[i].Фамилия + '</td><tr>');
+            }
+    });
+});
+</script>*@
+
+
+
